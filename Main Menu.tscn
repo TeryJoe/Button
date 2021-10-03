@@ -1,0 +1,171 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://menu_title.tres" type="DynamicFont" id=1]
+[ext_resource path="res://option_button.tres" type="DynamicFont" id=2]
+[ext_resource path="res://selector_button.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Main Menu.gd" type="Script" id=4]
+
+[node name="Main Menu" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.235294, 0.6, 0.839216, 1 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 377.0
+margin_top = 135.0
+margin_right = 647.0
+margin_bottom = 464.0
+custom_constants/separation = 0
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_right = 270.0
+margin_bottom = 73.0
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer"]
+margin_right = 270.0
+margin_bottom = 73.0
+custom_fonts/font = ExtResource( 1 )
+text = "Campus Clash"
+
+[node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 73.0
+margin_right = 270.0
+margin_bottom = 137.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2"]
+margin_left = 61.0
+margin_right = 208.0
+margin_bottom = 64.0
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
+margin_right = 147.0
+margin_bottom = 64.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer"]
+margin_right = 147.0
+margin_bottom = 64.0
+
+[node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_right = 14.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 14, 0 )
+custom_fonts/font = ExtResource( 3 )
+text = ">"
+
+[node name="Option_btn" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_left = 18.0
+margin_right = 147.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 129, 0 )
+custom_fonts/font = ExtResource( 2 )
+text = "Start"
+
+[node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 137.0
+margin_right = 270.0
+margin_bottom = 201.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer3"]
+margin_left = 61.0
+margin_right = 208.0
+margin_bottom = 64.0
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer3/VBoxContainer"]
+margin_right = 147.0
+margin_bottom = 64.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer3/VBoxContainer/CenterContainer"]
+margin_right = 147.0
+margin_bottom = 64.0
+
+[node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_right = 14.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 14, 0 )
+custom_fonts/font = ExtResource( 3 )
+text = ">"
+
+[node name="Option_btn" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_left = 18.0
+margin_right = 147.0
+margin_bottom = 64.0
+custom_fonts/font = ExtResource( 3 )
+text = "Options"
+
+[node name="CenterContainer4" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 201.0
+margin_right = 270.0
+margin_bottom = 265.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer4"]
+margin_left = 61.0
+margin_right = 208.0
+margin_bottom = 64.0
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer4/VBoxContainer"]
+margin_right = 147.0
+margin_bottom = 64.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer4/VBoxContainer/CenterContainer"]
+margin_right = 147.0
+margin_bottom = 64.0
+
+[node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_right = 14.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 14, 0 )
+custom_fonts/font = ExtResource( 3 )
+text = ">"
+
+[node name="Option_btn" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_left = 18.0
+margin_right = 147.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 129, 0 )
+custom_fonts/font = ExtResource( 3 )
+text = "Help"
+
+[node name="CenterContainer5" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 265.0
+margin_right = 270.0
+margin_bottom = 329.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer5"]
+margin_left = 61.0
+margin_right = 208.0
+margin_bottom = 64.0
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer5/VBoxContainer"]
+margin_right = 147.0
+margin_bottom = 64.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer5/VBoxContainer/CenterContainer"]
+margin_right = 147.0
+margin_bottom = 64.0
+
+[node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer5/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_right = 14.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 14, 0 )
+custom_fonts/font = ExtResource( 3 )
+text = ">"
+
+[node name="Option_btn" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer5/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_left = 18.0
+margin_right = 147.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 129, 0 )
+custom_fonts/font = ExtResource( 3 )
+text = "Exit"
